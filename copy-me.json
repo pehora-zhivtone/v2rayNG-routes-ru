@@ -1,0 +1,77 @@
+[
+  {
+    "domain": [
+      "geosite:private",
+      "geosite:ru-available-only-inside",
+      "2ip.ru"
+    ],
+    "enabled": true,
+    "locked": false,
+    "outboundTag": "direct",
+    "remarks": "Local & RU-only sites - direct"
+  },
+  {
+    "enabled": true,
+    "ip": [
+      "geoip:private",
+      "geoip:ru"
+    ],
+    "locked": false,
+    "outboundTag": "direct",
+    "remarks": "Local & RU IPs - direct"
+  },
+  {
+    "domain": [
+      "geosite:ru-blocked"
+    ],
+    "enabled": true,
+    "locked": false,
+    "outboundTag": "proxy",
+    "remarks": "Blocked sites - proxy"
+  },
+  {
+    "enabled": true,
+    "ip": [
+      "geoip:ru-blocked"
+    ],
+    "locked": false,
+    "outboundTag": "proxy",
+    "remarks": "Blocked IPs - proxy"
+  },
+  {
+    "enabled": true,
+    "ip": [
+      "geoip:cloudflare",
+      "geoip:cloudfront",
+      "geoip:fastly"
+    ],
+    "locked": false,
+    "outboundTag": "proxy",
+    "remarks": "Blocked CDNs - proxy"
+  },
+  {
+    "enabled": false,
+    "ip": [
+      "geoip:telegram"
+    ],
+    "locked": false,
+    "outboundTag": "proxy",
+    "remarks": "Telegram - proxy"
+  },
+  {
+    "domain": [
+      "speed.cloudflare.com"
+    ],
+    "enabled": true,
+    "locked": false,
+    "outboundTag": "proxy",
+    "remarks": "IP API url - proxy"
+  },
+  {
+    "enabled": true,
+    "locked": false,
+    "outboundTag": "direct",
+    "port": "0-65535",
+    "remarks": "Other categories - direct"
+  }
+]
