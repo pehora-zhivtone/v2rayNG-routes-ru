@@ -2,13 +2,21 @@
   {
     "domain": [
       "geosite:private",
-      "geosite:ru-available-only-inside",
-      "2ip.ru"
+      "geosite:ru-available-only-inside"
     ],
     "enabled": true,
     "locked": false,
     "outboundTag": "direct",
     "remarks": "Local & RU-only sites - direct"
+  },
+  {
+    "domain": [
+      "regexp:.*\\.(ru|su|xn\\-\\-p1ai)$"
+    ],
+    "enabled": true,
+    "locked": false,
+    "outboundTag": "direct",
+    "remarks": "RU domains - direct"
   },
   {
     "enabled": true,
@@ -19,6 +27,15 @@
     "locked": false,
     "outboundTag": "direct",
     "remarks": "Local & RU IPs - direct"
+  },
+  {
+    "enabled": true,
+    "locked": false,
+    "outboundTag": "direct",
+    "protocol": [
+      "bittorent"
+    ],
+    "remarks": "Torrents - direct"
   },
   {
     "domain": [
