@@ -11,7 +11,10 @@
   },
   {
     "domain": [
-      "regexp:.*\\.(ru|su|xn\\-\\-p1ai)$"
+      "regexp:.*\\.(ru|su|xn\\-\\-p1ai)$",
+      "domain:vk.com",
+      "domain:userapi.com",
+      "domain:avito.st"
     ],
     "enabled": true,
     "locked": false,
