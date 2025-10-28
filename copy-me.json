@@ -36,7 +36,7 @@
     "locked": false,
     "outboundTag": "direct",
     "protocol": [
-      "bittorent"
+      "bittorrent"
     ],
     "remarks": "Torrents - direct"
   },
