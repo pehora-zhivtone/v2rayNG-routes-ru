@@ -1,6 +1,15 @@
 [
   {
     "domain": [
+      "geosite:category-ads-all"
+    ],
+    "enabled": true,
+    "locked": false,
+    "outboundTag": "block",
+    "remarks": "Ad - block"
+  },
+  {
+    "domain": [
       "geosite:private",
       "geosite:ru-available-only-inside"
     ],
