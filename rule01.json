@@ -1,0 +1,52 @@
+[
+  {
+    "domain": [
+      "geosite:category-ads-all"
+    ],
+    "enabled": true,
+    "locked": false,
+    "outboundTag": "block",
+    "remarks": "Ad - block"
+  },
+  {
+    "domain": [
+      "geosite:private",
+      "geosite:ru-available-only-inside"
+    ],
+    "enabled": true,
+    "locked": false,
+    "outboundTag": "direct",
+    "remarks": "Local & RU-only sites - direct"
+  },
+  {
+    "domain": [
+      "regexp:.*\\.(ru|su|xn\\-\\-p1ai)$",
+      "domain:vk.com",
+      "domain:userapi.com",
+      "domain:avito.st"
+    ],
+    "enabled": true,
+    "locked": false,
+    "outboundTag": "direct",
+    "remarks": "RU domains - direct"
+  },
+  {
+    "enabled": true,
+    "ip": [
+      "geoip:private",
+      "geoip:ru"
+    ],
+    "locked": false,
+    "outboundTag": "direct",
+    "remarks": "Local & RU IPs - direct"
+  },
+  {
+    "enabled": true,
+    "locked": false,
+    "outboundTag": "direct",
+    "protocol": [
+      "bittorrent"
+    ],
+    "remarks": "Torrents - direct"
+  }
+]
