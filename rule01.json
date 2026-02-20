@@ -1,14 +1,20 @@
 [
   {
+    "enabled": false,
+    "locked": false,
+    "network": "tcp",
+    "outboundTag": "proxy",
+    "port": "853",
+    "remarks": "📡 DoT - proxy\n(on 🏳️, default=off)"
+  }, {
     "domain": [
       "geosite:category-ads-all"
     ],
-    "enabled": true,
+    "enabled": false,
     "locked": false,
     "outboundTag": "block",
-    "remarks": "Ad - block"
-  },
-  {
+    "remarks": "📣 Adware - block\n(default=off)"
+  }, {
     "domain": [
       "geosite:private",
       "geosite:ru-available-only-inside"
@@ -16,9 +22,8 @@
     "enabled": true,
     "locked": false,
     "outboundTag": "direct",
-    "remarks": "Local & RU-only sites - direct"
-  },
-  {
+    "remarks": "🇷🇺 Local & RU-only sites - direct\n(always on)"
+  }, {
     "domain": [
       "regexp:.*\\.(ru|su|xn\\-\\-p1ai)$",
       "domain:vk.com",
@@ -28,25 +33,24 @@
     "enabled": true,
     "locked": false,
     "outboundTag": "direct",
-    "remarks": "RU domains - direct"
-  },
-  {
+    "remarks": "🇷🇺 RU domains - direct\n(always on)"
+  }, {
     "enabled": true,
     "ip": [
       "geoip:private",
-      "geoip:ru"
+      "geoip:ru",
+      "geoip:yandex"
     ],
     "locked": false,
     "outboundTag": "direct",
-    "remarks": "Local & RU IPs - direct"
-  },
-  {
+    "remarks": "🇷🇺 Local & RU IPs - direct\n(always on)"
+  }, {
     "enabled": true,
     "locked": false,
     "outboundTag": "direct",
     "protocol": [
       "bittorrent"
     ],
-    "remarks": "Torrents - direct"
+    "remarks": "🏴‍☠️ Torrents - direct\n(default=on)"
   }
 ]
