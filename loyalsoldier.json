@@ -1,0 +1,68 @@
+[{
+    "enabled": false,
+    "locked": false,
+    "network": "tcp",
+    "outboundTag": "proxy",
+    "port": "853",
+    "remarks": "📡 DoT - proxy\n(on 🏳️, default=off)"
+  }, {
+    "domain": [
+      "geosite:category-ads-all"
+    ],
+    "enabled": false,
+    "locked": false,
+    "outboundTag": "block",
+    "remarks": "📣 Adware - block\n(default=off)"
+  }, {
+    "domain": [
+      "regexp:.*\\.(ru|su|xn\\-\\-p1ai)$",
+      "geosite:private",
+      "domain:2gis.com",
+      "domain:avito.com",
+      "domain:avito.st",
+      "domain:clstorage.net",
+      "domain:coub.com",
+      "domain:gismeteo.st",
+      "domain:kaspersky.com",
+      "domain:kaspersky-labs.com",
+      "domain:kinescopecdn.net",
+      "domain:mycdn.me",
+      "domain:okko.tv",
+      "domain:ozonusercontent.com",
+      "domain:pobeda.aero",
+      "domain:userapi.com",
+      "domain:vk-cdn.net",
+      "domain:vk.com",
+      "domain:vk.me",
+      "domain:ya.cc",
+      "domain:yandex.cloud",
+      "domain:yandex.com",
+      "domain:yandex.net",
+      "domain:yandex.net",
+      "domain:yandex.st",
+      "domain:yandexcloud.net",
+      "domain:yastatic.net"
+    ],
+    "enabled": true,
+    "locked": false,
+    "outboundTag": "direct",
+    "remarks": "🇷🇺 RU & local domains - direct\n(always on)"
+  }, {
+    "enabled": true,
+    "ip": [
+      "geoip:private",
+      "geoip:ru"
+    ],
+    "locked": false,
+    "outboundTag": "direct",
+    "remarks": "🇷🇺 RU & local IPs - direct\n(always on)"
+  }, {
+    "enabled": true,
+    "locked": false,
+    "outboundTag": "direct",
+    "protocol": [
+      "bittorrent"
+    ],
+    "remarks": "🏴‍☠️ Torrents - direct\n(default=on)"
+  }
+]
